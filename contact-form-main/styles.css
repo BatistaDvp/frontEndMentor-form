@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(148, 38%, 91%);
+  color: hsl(187, 24%, 22%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+button {
+  width: 100%;
+  background-color: hsl(169, 82%, 27%);
+  color: white;
+  font-size: 16px;
+}
+
+svg {
+  width: 20px;
+}
+
+.popup {
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: hsl(187, 24%, 22%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  gap: 15px;
+  opacity: 0.8;
+  visibility: hidden;
+}
+
+.popup h1 {
+  font-size: 22px;
+}
+
+.container {
+  background-color: white;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+  padding: 30px 30px;
+  border-radius: 10px;
+}
+
+/*DISPLAY FLEX*/
+
+.fullName,
+.options,
+.general-box,
+.support-box,
+.term {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+/*FLEX DIRECTION COLUMN*/
+.firstName,
+.lastName,
+.email,
+.queryType,
+.message {
+  display: flex;
+  flex-direction: column;
+}
+
+/*HEIGHT*/
+.firstName-box,
+.lastName-box,
+.email-box,
+button,
+.general-box,
+.support-box {
+  height: 45px;
+}
+
+.message-box {
+  height: 70px;
+}
+
+/*WIDTH*/
+
+.firstName,
+.lastName,
+.general-box,
+.support-box {
+  width: 50%;
+}
+
+.fullName,
+.email,
+.queryType,
+.message,
+.term,
+.submit,
+.message-box {
+  width: 100%;
+}
+
+/* GAP*/
+.fullName,
+.term {
+  gap: 20px;
+}
+
+.firstName,
+.lastName,
+.email,
+.queryType,
+.message,
+.general-box,
+.support-box,
+.options {
+  gap: 10px;
+}
+
+/*BORDER RADIUS*/
+
+.text,
+button,
+.options:first-child,
+.general-box,
+.support-box {
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+.circle {
+  border-radius: 50px;
+}
+
+/*PADDING*/
+
+.general-box,
+.support-box {
+  padding: 20px;
+}
+
+.text {
+  padding: 10px;
+}
+
+/*CHECKBOXES STYLE*/
+
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: hsl(169, 82%, 27%);
+  width: 16px;
+  height: 16px;
+}
+
+
+
+/*HOVER*/
+
+input:hover,
+button:hover {
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: hsl(170, 84%, 22%);
+  font-size: 17px;
+}
+
+/*ATTRIBUTION*/
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 20px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/*ERRO*/
+
+.erro {
+  color: red;
+}
+.ast {
+  color: hsl(170, 84%, 22%);
+}
